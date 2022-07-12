@@ -106,5 +106,5 @@ class MyApp(Adw.Application):
     def on_activate(self, app):
         self.win = MainWindow(application=app)
         self.win.present()
-app = MyApp(application_id="com.github.vikdevelop.scrcpy-gui")
+app = MyApp(application_id="com.github.vikdevelop.gitcloner-gui")
 app.run(sys.argv)
