@@ -6,5 +6,6 @@ cp com.github.vikdevelop.gitcloner-gui.desktop ~/.local/share/applications
 mkdir -p ~/.local/share/gitcloner
 cp -R translations ~/.local/share/gitcloner/
 cp -R icon ~/.local/share/gitcloner/
+cp icon/* ~/.local/share/icons/hicolor/256x256/apps/gitcloner
 cd
 rm -rf /tmp/gitcloner-gui
