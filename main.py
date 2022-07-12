@@ -9,8 +9,10 @@ from gi.repository import Gtk, Adw
 HOME = os.path.expanduser('~')
 cs = 'LANG=cs_CZ.UTF-8\nLC_CTYPE="cs_CZ.UTF-8"\nLC_NUMERIC="cs_CZ.UTF-8"\nLC_TIME="cs_CZ.UTF-8"\nLC_COLLATE="cs_CZ.UTF-8"\nLC_MONETARY="cs_CZ.UTF-8"\nLC_MESSAGES="cs_CZ.UTF-8"\nLC_PAPER="cs_CZ.UTF-8"\nLC_NAME="cs_CZ.UTF-8"\nLC_ADDRESS="cs_CZ.UTF-8"\nLC_TELEPHONE="cs_CZ.UTF-8"\nLC_MEASUREMENT="cs_CZ.UTF-8"\nLC_IDENTIFICATION="cs_CZ.UTF-8"\nLC_ALL='
 if subprocess.getoutput("locale") == cs:
+    sys.path.append('%s/.local/share/gitcloner' % HOME)
     from translations.cs import *
 else:
+    sys.path.append('%s/.local/share/gitcloner' % HOME)
     from translations.en import *
 class Dialog_successfully(Gtk.Dialog):
     def __init__(self, parent):
@@ -73,7 +75,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_child(self.box1)
         
         self.img = Gtk.Image()
-        self.img.set_from_file("icon/git.png")
+        self.img.set_from_file("%s/.local/share/gitcloner/icon/git.png" % HOME)
         self.img.set_pixel_size(100)
         self.box1.append(self.img)
         
