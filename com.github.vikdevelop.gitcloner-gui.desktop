@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Git cloner
+Comment=Simple GUI for download Git repository
+Type=Application
+Exec=/home/$USER/.local/bin/gitcloner-gui
+Icon=gitcloner
+Terminal=false
+Categories=System;System-Tools
