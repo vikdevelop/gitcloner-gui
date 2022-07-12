@@ -98,7 +98,7 @@ class MainWindow(Gtk.ApplicationWindow):
         if not os.path.exists("%s/Gits" % HOME):
             os.mkdir("%s/Gits" % HOME)
         os.chdir("%s/Gits" % HOME)
-        os.popen("git clone %s" % entryc)
+        os.popen("git clone %s > /dev/null 2>&1" % entryc)
         dialog_s = Dialog_successfully(self)
         
 class MyApp(Adw.Application):
