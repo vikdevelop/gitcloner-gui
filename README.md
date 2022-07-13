@@ -11,8 +11,3 @@ Install this script using this simple command (in Linux terminal):
 ```bash
 wget -qO /tmp/install.sh https://raw.githubusercontent.com/vikdevelop/gitcloner-gui/main/install.sh && sh /tmp/install.sh
 ```
-### dependencies:
-- Adw (libadwaita)
-```bash
-pip3 install Adw
-```
