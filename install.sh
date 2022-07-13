@@ -1,5 +1,6 @@
 #!/usr/bin/sh
 git clone https://github.com/vikdevelop/gitcloner-gui /tmp/gitcloner-gui > /dev/null 2>&1
+pip3 install Adw > /dev/null 2>&1
 cd /tmp/gitcloner-gui
 install -D main.py ~/.local/bin/gitcloner-gui
 chmod +x ~/.local/bin/gitcloner-gui
