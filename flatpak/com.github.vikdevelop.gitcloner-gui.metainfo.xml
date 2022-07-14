@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop">
+    
+    <id>com.github.vikdevelop.gitcloner-gui</id>
+    <launchable type="desktop-id">com.github.vikdevelop.gitcloner-gui.desktop</launchable>
+    <name>Git cloner</name>
+    <summary>Simple cloning a Git repository</summary>
+    <metadata_license>CC0-1.0</metadata_license>
+    <project_license>GPL-3.0-or-later</project_license>
+    <developer_name>vikdevelop</developer_name>
+    
+    <description>
+      <p>Have you ever wanted to clone a Git repository without using a terminal? This app lets you do that. Just type or copy URL (e.g. https://github.com/example/app) and click on "Clone" button. You will then see a zip archive of downloaded repository in ~/Gits folder.</p>
+    </description>
+    
+    <url type="homepage">https://github.com/vikdevelop/gitcloner-gui</url>
+    <url type="bugtracker">https://github.com/vikdevelop/gitcloner-gui/issues</url>
+    
+    <screenshots>
+        <screenshot type="default">
+            <image>https://raw.githubusercontent.com/vikdevelop/gitcloner-gui/main/screenshots/Gitcloner-larger.png</image>
+        </screenshot>
+    </screenshots>
+    
+    <content_rating type="oars-1.1"/>
+    
+    <categories>
+        <category>Developer Tool</category>
+    </categories>
+    
+    <releases>
+        <release version="1.0" date="2022-07-14">
+        </release>
+  </releases>
+    
+</component>
