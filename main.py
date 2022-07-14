@@ -75,7 +75,7 @@ class MainWindow(Gtk.ApplicationWindow):
         self.set_child(self.box1)
         
         self.img = Gtk.Image()
-        self.img.set_from_file("%s/.local/share/gitcloner/icon/git.png" % HOME)
+        self.img.set_from_file("/app/icon/com.github.vikdevelop.gitclonner-gui.png")
         self.img.set_pixel_size(100)
         self.box1.append(self.img)
         
@@ -98,7 +98,7 @@ class MainWindow(Gtk.ApplicationWindow):
         if not os.path.exists("%s/Gits" % HOME):
             os.mkdir("%s/Gits" % HOME)
         os.chdir("%s/Gits" % HOME)
-        os.popen("git clone %s > /dev/null 2>&1" % entryc)
+        os.popen("wget --no-check-certificate -O %s.zip %s/archive/main.zip > /dev/null 2>&1" % (entryc.replace('/', '.'), entryc))
         dialog_s = Dialog_successfully(self)
         
 class MyApp(Adw.Application):
